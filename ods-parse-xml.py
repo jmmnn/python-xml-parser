@@ -24,9 +24,13 @@ f.write('<html>')
 for meta in root.iter('meta'):
     if meta.get('name')=='URL':
         content = meta.get('content')
-        f.write('<A href="' + content + '">link</A>' + '\n')
+        f.write('<A href="' + content + '">' + content + '</A>' + '<br>')
 f.write('</html>')
-      
+  
+ 
+
+  
+  
 ###works !!!!!  to display just the content of the URL meta tag
 #print 'iterate meta:'    
 #for meta in root.iter('meta'):
